@@ -1,0 +1,44 @@
+body {
+    color: #fff ;
+    font-family: 'Nunito Semibold';
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: minmax(150px, auto) ;
+    grid-gap: 30px ;
+    max-width: 960px ;
+    margin: 0 auto;
+    text-align: center ;
+    align-items: start ; /* start end , default strech */
+    justify-items: start ;
+}
+/*
+align - up and down
+justify - left and right
+*/
+
+#content div {
+    background: grey;
+    padding: 30px;
+}
+
+#content div:nth-child(even) {
+    background: #7fffd4
+}
+
+.one{
+    justify-self: end ;
+    align-self: end ;
+}
+
+.two {
+    align-self: center ;
+    justify-self : center ;
+}
+
+.three {
+    align-self: start ;
+    justify-self: start ;
+}
