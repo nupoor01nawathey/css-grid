@@ -1,0 +1,44 @@
+body {
+    color: #fff ;
+    font-family: 'Nunito Semibold';
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-gap: 10px ;
+    margin: 0 auto;
+    max-width: 960px ;
+    background-color:burlywood ;
+}
+
+#content > * {
+    padding: 30px ;
+    background: grey
+}
+
+header {
+    grid-column: 1 / 13 ;
+}
+
+main {
+    grid-column: 3 / 13 ;
+    grid-row: 2 / 4 ; 
+}
+
+nav {
+    grid-row:  2 / 4 ;
+}
+
+aside {
+    grid-row:  2 / 4 ;
+}
+
+section {
+    grid-column: 1 / 13 ;
+    grid-row: 4 / 6 ;
+}
+
+footer {
+    grid-column: 1 / 13 ;
+}
