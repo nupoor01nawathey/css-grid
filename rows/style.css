@@ -1,0 +1,27 @@
+body {
+    color: #fff ;
+    font-family: 'Nunito Semibold';
+}
+
+#content {
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 200px 300px 400px 500px; */
+    /* grid-template-rows: repeat(3, 200px) ; */
+    grid-template-rows: repeat(3, minmax(200px, auto)) ;
+    grid-gap: 30px ;
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px ; */
+    /* max-width: 960px ; */
+    margin: 0 auto;
+    text-align: center
+}
+
+#content div{
+    background: grey;
+    padding: 30px ;
+}
+
+#content div:nth-child(even) {
+    background: #7fffd4
+}
